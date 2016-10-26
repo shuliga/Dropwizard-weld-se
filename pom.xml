@@ -55,12 +55,6 @@
             <groupId>org.jboss.weld.servlet</groupId>
             <artifactId>weld-servlet-core</artifactId>
         </dependency>
-        <!-- Replacing excluded JBoss javax artifacts by JavaEE-->
-        <!--<dependency>-->
-            <!--<groupId>javax.el</groupId>-->
-            <!--<artifactId>javax.el-api</artifactId>-->
-            <!--<version>${version.javax-el}</version>-->
-        <!--</dependency>-->
 
     </dependencies>
 
