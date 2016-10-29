@@ -20,7 +20,7 @@ class DropwizardCdiExtension implements Extension {
 	private final Set<String> names = Sets.newHashSet();
 
 	void beforeBeanDiscovery(@Observes BeforeBeanDiscovery bbd) {
-		logger.error("============================> beginning the scanning process");
+		logger.info("============================> beginning the scanning process");
 	}
 
 	<T> void processAnnotatedType(@Observes ProcessAnnotatedType<T> pat) {
@@ -30,7 +30,7 @@ class DropwizardCdiExtension implements Extension {
 	}
 
 	void afterBeanDiscovery(@Observes AfterBeanDiscovery abd) {
-		logger.error("============================> finished the scanning process");
+		logger.info("============================> finished the scanning process");
 	}
 
 	public Set<String> getNames() {
