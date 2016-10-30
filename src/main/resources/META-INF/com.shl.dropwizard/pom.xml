@@ -2,20 +2,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <name>Dropwizard Weld SE BOM</name>
+    <name>Dropwizard Weld Servlet BOM</name>
 
     <groupId>com.shl.dropwizard</groupId>
-    <artifactId>dropwizard-weld-se-bom</artifactId>
-    <version>2.0</version>
+    <artifactId>dropwizard-weld-servlet-bom</artifactId>
+    <version>3.0</version>
     <packaging>pom</packaging>
 
     <properties>
-        <version.cdi-api>2.0-EDR1</version.cdi-api>
-        <version.weld>3.0.0.Alpha12</version.weld>
+        <version.cdi-api>2.0-EDR2</version.cdi-api>
+        <version.weld>3.0.0.Alpha17</version.weld>
         <version.javax-api>1.2</version.javax-api>
-        <version.jersey>2.22.1</version.jersey>
-        <version.jetty>9.2.15.v20160210</version.jetty>
-        <version.jandex>1.2.2.Final</version.jandex>
+        <version.jetty>9.3.0.M2</version.jetty>
+        <version.jandex>2.0.3.Final</version.jandex>
 
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
@@ -60,10 +59,11 @@
     </dependencyManagement>
 
     <dependencies>
+
         <dependency>
             <groupId>com.shl.dropwizard</groupId>
-            <artifactId>dropwizard-weld-se</artifactId>
-            <version>2.0</version>
+            <artifactId>dropwizard-weld-servlet</artifactId>
+            <version>3.0</version>
         </dependency>
 
         <dependency>
@@ -105,12 +105,6 @@
                     <artifactId>jersey-common</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <!-- Adding correct Jersey Core dependency-->
-        <dependency>
-            <groupId>org.glassfish.jersey.core</groupId>
-            <artifactId>jersey-common</artifactId>
-            <version>${version.jersey}</version>
         </dependency>
 
     </dependencies>
