@@ -82,7 +82,7 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.shl.dropwizard</groupId>
+            <groupId>io.github.shuliga.dropwizard</groupId>
             <artifactId>dropwizard-weld-servlet</artifactId>
             <version>3.0</version>
         </dependency>
